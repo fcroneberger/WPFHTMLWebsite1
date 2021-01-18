@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader'
+    'header header header header header header header header'
+    'left left left middle middle right right right'
+    'footer footer footer footer footer footer footer footer';
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+      'preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader'
+      'header header header header header header header header'
+      'left left left left left left left left'
+      'middle middle middle middle middle middle midle midle'
+      'right right right right right right right right'
+      'footer footer footer footer footer footer footer footer';
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.preHeader {
+    grid-area: preHeader;
+    height: 60px;
+}
+
+
+/* START COPY/PASTE */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+    display: none;
+}
+
+/* END COPY/PASTE */
+
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.left, .middle, .right {
+    height: 1800px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
