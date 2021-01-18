@@ -1,0 +1,49 @@
+.footer {
+    grid-area: footer;
+    background-color: #999;
+}
+
+.footer a {
+    color: white;
+}
+
+.footerHeart {
+    color: #ff0000;
+}
+
+.left-footerPanel {
+    grid-area: left-footerPanel;
+
+    margin: auto 0 auto 0;
+    text-align: left;
+    padding: .5em 0 .5em 0;
+}
+
+.middle-footerPanel {
+    grid-area: center-footerPanel;
+
+    margin: auto 0 auto 0;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+}
+
+.right-footerPanel {
+    grid-area: right-footerPanel;
+
+    margin: auto 0 auto 0;
+    text-align: right;
+    padding: .5em 0 .5em 0;
+}
+
+.container-footer {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    width: auto;
+    grid-template-areas: 'left-footerPanel center-footerPanel right-footerPanel';
+}
+
+.container-footer a::after {
+    content: "\A";
+    white-space: pre;
+}
