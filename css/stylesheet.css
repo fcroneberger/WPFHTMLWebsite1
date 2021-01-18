@@ -1,3 +1,7 @@
+@import "header.css";
+@import "footer.css";
+@import "index-content.css";
+
 * {
     box-sizing: border-box;
 }
@@ -11,96 +15,15 @@ body {
 .container {
     display: grid;
     grid-template-areas:
-    'preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader'
-    'header header header header header header header header header header header header'
-    'left left left left middle middle middle middle right right right right'
-    'footer footer footer footer footer footer footer footer footer footer footer footer';
+        'preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader'
+        'header header header header header header header header header header header header'
+        'content content content content content content content content content content content content'
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
 }
 
-@media screen and (max-width: 600px) {
-    .container {
-        grid-template-areas:
-      'preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader preHeader'
-      'header header header header header header header header header header header header'
-      'left left left left left left left left left left left left'
-      'middle middle middle middle middle middle middle middle middle middle middle middle'
-      'right right right right right right right right right right right right'
-      'footer footer footer footer footer footer footer footer footer footer footer footer';
-    }
-
-    .header a:not(:first-child) {display: none;}
-    .header a.navIcon {
-        float: right;
-        display: block;
-    }
-
-    .header.responsive {position: relative;}
-    .header.responsive .navIcon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: .5em;
-    }
-    .header.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .header.responsive.sticky {position: fixed}
+.content {
+    grid-area: content;
 }
 
-.preHeader {
-    grid-area: preHeader;
 
-    text-align: right;
-    display: block;
-    float: left;
-    padding: .3em;
-}
 
-.header {
-    grid-area: header;
-    background-color: #f1f1f1;
-    text-align: center;
-    font-size: 1.5em;
-    padding: .5em;
-}
-
-.header .navIcon {
-    display: none;
-}
-
-.headerIcon {
-    text-align: left;
-    float: left;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-}
-
-.left, .middle, .right {
-    height: 1800px;
-}
-
-.left {
-    grid-area: left;
-}
-
-.middle {
-    grid-area: middle;
-}
-
-.right {
-    grid-area: right;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}

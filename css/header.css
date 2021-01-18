@@ -1,0 +1,60 @@
+@media screen and (max-width: 600px) {
+
+    .header a:not(:first-child) {display: none;}
+    .header a.navIcon {
+        float: right;
+        display: block;
+    }
+
+    .header.responsive {position: relative;}
+    .header.responsive .navIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .5em;
+    }
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header.responsive.sticky {position: fixed}
+}
+
+.preHeader {
+    grid-area: preHeader;
+
+    text-align: right;
+    display: block;
+    float: left;
+    padding: .3em;
+}
+
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+.header .navIcon {
+    display: none;
+}
+
+.headerIcon {
+    text-align: left;
+    float: left;
+}
+
+.headerIcon img {
+    width: 64px;
+    height: 64px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

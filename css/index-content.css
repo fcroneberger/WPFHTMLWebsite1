@@ -1,0 +1,30 @@
+.index-content-container {
+    display: grid;
+    grid-template-areas:
+            'leftPanel leftPanel leftPanel leftPanel middlePanel middlePanel middlePanel middlePanel rightPanel rightPanel rightPanel rightPanel';
+}
+
+@media screen and (max-width: 600px) {
+    .index-content-container {
+        grid-template-areas:
+          'leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel'
+          'middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel middlePanel'
+          'rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel'
+    }
+}
+
+.leftPanel, .middlePanel, .rightPanel {
+    height: 1300px;
+}
+
+.leftPanel {
+    grid-area: leftPanel;
+}
+
+.middlePanel {
+    grid-area: middlePanel;
+}
+
+.rightPanel {
+    grid-area: rightPanel;
+}
