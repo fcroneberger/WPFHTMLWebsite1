@@ -10,7 +10,3 @@ function onScroll() {
         header.classList.remove("sticky");
     }
 }
-
-function toggleNav() {
-    header.classList.toggle("responsive");
-}
