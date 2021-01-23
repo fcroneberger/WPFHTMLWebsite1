@@ -12,7 +12,6 @@
 
     background-color: #f1f1f1;
     text-align: center;
-    font-size: 1.5em;
 }
 
 .navIcon {
@@ -36,12 +35,52 @@
 
 .middle-headerPanel {
     grid-area: center-headerPanel;
-
     width: 100%;
 }
 
-.middle-headerPanel a {
-    text-decoration: none;
+.header-button {
+    background-color: var(--background-color);
+    color: #222;
+    height: 100%;
+    margin: 0 2px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+
+    --background-color: #E3E3E3;
+    --accent-color: #0AF;
+}
+
+.header-button.button-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.header-button.button-background-slide:hover::before,
+.header-button.button-background-slide:focus::before {
+    transform: scaleY(1);
+}
+
+.header-button.button-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.header-button.button-background-slide:hover,
+.header-button.button-background-slide:focus {
+    color: white;
 }
 
 .right-headerPanel {
@@ -51,9 +90,8 @@
 .container-header {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(12.5%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10.0%, 1fr));
 
-    margin: auto 0 auto 0;
     align-items: center;
     justify-items: center;
     grid-template-areas: 'left-headerPanel center-headerPanel center-headerPanel center-headerPanel center-headerPanel center-headerPanel center-headerPanel right-headerPanel';
@@ -61,13 +99,14 @@
 
 .sticky {
     position: fixed;
-
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
 
-    .header a:not(:first-child) {display: none;}
+    .header button:not(:first-child) {
+        display: none;
+    }
     .header a.navIcon {
         display: block;
     }
@@ -78,11 +117,15 @@
     .header.responsive .navIcon {
         position: relative;
     }
-    .header.responsive a {
-        float: none;
+    .header.responsive button {
+        justify-self: center;
+        align-self: center;
         display: block;
-        text-align: center;
     }
 
     .header.responsive.sticky {position: fixed}
+}
+
+@media screen and (max-width: 600px) {
+    .header button {display: none;}
 }

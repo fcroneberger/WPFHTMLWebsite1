@@ -13,8 +13,8 @@
     }
 }
 
-.leftPanel, .middlePanel, .rightPanel {
-    height: 1300px;
+.leftPanel, .rightPanel, .middlePanel {
+    height: 100vh;
 }
 
 .leftPanel {
