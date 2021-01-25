@@ -17,17 +17,17 @@
 .leftPanel {
     grid-area: leftPanel;
 
-    height: auto;
+    height: 100vh;
 }
 
 .middlePanel {
     grid-area: middlePanel;
 
-    height: auto;
+    height: 100vh;
 }
 
 .rightPanel {
     grid-area: rightPanel;
 
-    height: auto;
+    height: 100vh;
 }
