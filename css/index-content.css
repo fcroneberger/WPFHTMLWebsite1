@@ -1,5 +1,6 @@
 .index-content-container {
     display: grid;
+
     grid-template-areas:
             'leftPanel leftPanel leftPanel leftPanel middlePanel middlePanel middlePanel middlePanel rightPanel rightPanel rightPanel rightPanel';
 }
@@ -13,18 +14,20 @@
     }
 }
 
-.leftPanel, .rightPanel, .middlePanel {
-    height: 100vh;
-}
-
 .leftPanel {
     grid-area: leftPanel;
+
+    height: auto;
 }
 
 .middlePanel {
     grid-area: middlePanel;
+
+    height: auto;
 }
 
 .rightPanel {
     grid-area: rightPanel;
+
+    height: auto;
 }
