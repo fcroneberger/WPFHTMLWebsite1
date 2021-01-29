@@ -30,13 +30,16 @@
 .header-button {
     background-color: var(--background-color);
     color: #222;
-    margin: 0 2px;
     border: none;
     outline: none;
     text-align: center;
+    text-justify: auto;
     position: relative;
     cursor: pointer;
     font-size: 25px;
+
+    padding: .5% 1%;
+    margin-left: 5px;
 
     --background-color: #E3E3E3;
     --accent-color: #0AF;
