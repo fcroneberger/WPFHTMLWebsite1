@@ -1,4 +1,4 @@
-.preHeader {
+.pre-header {
     grid-area: preHeader;
 
     background-color: var(--primary-background-color);
@@ -36,6 +36,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.header-button:hover, .header-button-active {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
 }
 
 .header .nav-icon {

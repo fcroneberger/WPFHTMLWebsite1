@@ -11,21 +11,33 @@
 
 .content-index-panel {
     grid-area: contentIndexPanel;
-
-    margin-bottom: 130px;
 }
 
 .index-button {
     border: 3px solid var(--primary-text-color);
     color: var(--tertiär-text-color);
-    font-size: 2em;
-    text-decoration: none;
+
+    padding: 5px 10px;
+    margin: 100px 20% 300px;
+    text-align: center;
+    cursor: pointer;
 }
 
+.index-button:hover {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
 
+.index-button a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.index-button a:visited {
+    color:inherit;
+}
 
 .index-logo {
-
     margin-top: 80px;
     display: block;
     margin-left: auto;
@@ -40,7 +52,7 @@
 
 .index-title {
     text-align: center;
-    font-size: 10em;
+    font-size: 8em;
     color: var(--primary-text-color);
     margin-block-start: .1em;
     margin-block-end: .1em;

@@ -53,12 +53,8 @@
 
 }
 
-.card-group {
-    margin: 0 auto;
-}
 
 .card {
-    justify-content: center;
     margin: 20px 20px 0;
     max-width: 300px;
     height: auto;
