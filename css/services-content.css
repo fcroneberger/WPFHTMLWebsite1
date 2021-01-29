@@ -1,0 +1,112 @@
+.services-content-container {
+    display: grid;
+
+    background-color: var(--secondary-background-color);
+
+    grid-template-areas:
+                'topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel'
+                'leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel'
+                'centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel'
+                'rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel'
+}
+
+
+.top-services-panel {
+    grid-area: topServicesPanel;
+
+    background-color: var(--secondary-text-color);
+    margin: 40px 0;
+}
+
+.left-services-panel {
+    grid-area: leftServicesPanel;
+
+    margin-top: 50px;
+}
+
+.center-services-panel {
+    grid-area: centerServicesPanel;
+
+    margin-top: 50px;
+}
+
+.right-services-panel {
+    grid-area: rightServicesPanel;
+
+    margin-top: 50px;
+}
+
+.left-services-panel, .center-services-panel, .right-services-panel {
+    color: var(--tertiär-text-color);
+}
+
+.service-title {
+    font-size: 3em;
+    color: var(--secondary-background-color);
+}
+
+
+.service-title {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--secondary-text-color);
+
+}
+
+.card-group {
+    margin: 0 auto;
+}
+
+.card {
+    justify-content: center;
+    margin: 20px 20px 0;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    float: left;
+    background: var(--secondary-text-color);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--primary-text-color);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-content {
+    text-align: center;
+    font-size: 1em;
+    color: var(--tertiär-text-color);
+    padding: 30px 10px 10px;
+}
+
+.card-icon {
+    font-size: 5em;
+    color: var(--primary-text-color);
+    padding: 5px 10px;
+}
+
+.card-icon-gold {
+    color: gold;
+}
+
+.card-icon-silver {
+    color: silver;
+}
+
+.card-icon-bronze {
+    color: sandybrown;
+}
+
+
+@media screen and (max-width: 600px) {
+    .services-content-container {
+        grid-template-areas:
+                'topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel topServicesPanel'
+                'leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel leftServicesPanel'
+                'centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel centerServicesPanel'
+                'rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel rightServicesPanel'
+    }
+}

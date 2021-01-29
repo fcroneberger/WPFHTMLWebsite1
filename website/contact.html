@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>FurYou-IT | Startseite</title>
+    <title>FurYou-IT | Kontakt</title>
 
     <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="../css/index-content.css" type="text/css">
+    <link rel="stylesheet" href="../css/contact-content.css" type="text/css">
     <link rel="icon" href="images/logo.svg" type="image/svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -29,22 +29,28 @@
     </div>
 
     <div class="content">
-        <div class="index-content-container">
-
-            <div class="content-index-panel">
-                <img class="index-logo" src="./images/logo.svg" alt="FurYou-IT Logo"/>
+        <div class="contact-content-container">
+            <div class="contact-top-panel">
+                <p class="top-title">FurYou-IT | Kontakt</p>
                 <p class="top-subtitle">IT FurYou!</p>
+            </div>
 
-                <p class="index-text">
-                    <b>FurYou</b> ist unser Motto wenn es um IT geht!<br>
-                    Entscheiden Sie sich heute noch f&uuml;r eines von Ihnen gestaltbares <b>All-in-One Paket</b><br>
-                    um Ihre IT auf <b>H&oumlchstleistung zu bringen!</b><br>
-                    <br>
-                    Ob <b>Webentwicklung, Webhosting oder Webmaintrance</b> bei uns sind Sie an<br>
-                    der richtigen Stelle!
-                </p>
+            <div class="contact-bottom-panel">
+                <form>
+                    <label class="contact-label" for="inputSurname">Vorname</label>
+                    <input class="contact-input" id="inputSurname" type="text" placeholder="Vorname" required>
 
-                <a class="index-button" href="./services.html">Unsere Leistungen</a>
+                    <label class="contact-label" for="inputLastname">Nachname</label>
+                    <input class="contact-input" id="inputLastname" type="text" placeholder="Nachname" required>
+
+                    <label class="contact-label" for="inputEMail">E-Mail</label>
+                    <input class="contact-input" id="inputEMail" type="email" placeholder="E-Mail" required>
+
+                    <label class="contact-label" for="inputMessage">Nachricht</label>
+                    <textarea class="contact-input contact-textarea" id="inputMessage" placeholder="Nachricht" required></textarea>
+
+                    <button class="contact-submit-button" type="submit">Absenden</button>
+                </form>
             </div>
         </div>
     </div>

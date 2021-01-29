@@ -1,0 +1,61 @@
+.contact-content-container {
+    display: grid;
+    background-color: var(--secondary-background-color);
+
+    grid-template-areas:
+            'contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel contactTopPanel'
+            'contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel contactBottomPanel';
+
+}
+
+.contact-top-panel {
+    grid-area: contactTopPanel;
+
+    background-color: var(--secondary-text-color);
+    margin: 40px 0;
+}
+
+.contact-bottom-panel {
+    grid-area: contactBottomPanel;
+
+    color: var(--tertiär-text-color);
+}
+
+.contact-input {
+    display: block;
+
+    background-color: var(--secondary-text-color);
+    color: var(--primary-background-color);
+    width: max(75%, 400px);
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid var(--primary-text-color);
+    font-size: 20px;
+}
+
+.contact-textarea {
+    resize: vertical;
+    height: 200px;
+    min-height: 200px;
+}
+
+.contact-label {
+    display: block;
+
+    width: max(75%, 400px);
+    margin: 20px auto 0;
+    color: var(--tertiär-text-color);
+}
+
+.contact-submit-button {
+    display: block;
+
+    width: max(10%, 100px);
+    margin: 60px auto 150px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
+}

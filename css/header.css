@@ -1,91 +1,64 @@
 .preHeader {
     grid-area: preHeader;
 
+    background-color: var(--primary-background-color);
+    color: var(--tertiär-text-color);
     text-align: right;
     display: block;
     padding: .3em;
 }
 
+.pre-header-icon {
+    color: var(--primary-text-color);
+}
+
+.pre-header-text {
+    color: var(--tertiär-text-color);
+    margin-right: 10px;
+}
+
 .header {
     grid-area: header;
 
-    background-color: #f1f1f1;
+    background-color: var(--secondary-background-color);
+    overflow: hidden;
 }
 
-.navIcon {
+.nav-icon, .header-button-icon {
+    color: var(--primary-text-color);
+}
+
+.header a {
+    float: left;
+    display: block;
+    color: var(--tertiär-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header .nav-icon {
     display: none;
 }
 
-
-.header-logo-banner, .header-logo {
+.header-logo {
     height: 50px;
+    padding: 0 16px;
     display: block;
     float: left;
 }
 
-.header-logo {
-    display: none;
-}
-
-.header-button {
-    background-color: var(--background-color);
-    color: #222;
-    border: none;
-    outline: none;
-    text-align: center;
-    text-justify: auto;
-    position: relative;
-    cursor: pointer;
-    font-size: 25px;
-
-    padding: .5% 1%;
-    margin-left: 5px;
-
-    --background-color: #E3E3E3;
-    --accent-color: #0AF;
-}
-
-.header-button.button-background-slide::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: var(--accent-color);
-
-    transition: transform 300ms ease-in-out;
-    transform: scaleY(0);
-    transform-origin: bottom;
-}
-
-.header-button.button-background-slide:hover::before,
-.header-button.button-background-slide:focus::before {
-    transform: scaleY(1);
-}
-
-.header-button.button-background-slide {
-    transition: color 300ms ease-in-out;
-    z-index: 1;
-}
-
-.header-button.button-background-slide:hover,
-.header-button.button-background-slide:focus {
-    color: white;
-}
 
 .sticky {
     position: fixed;
     width: 100%;
 }
 
-@media screen and (max-width: 1100px) {
-
-    .header button:not(:first-child) {
-        display: none;
-    }
-    .header a.navIcon {
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child) {display: none;}
+    .header a.nav-icon {
+        float: right;
         display: block;
     }
 
@@ -93,11 +66,24 @@
         position: relative;
     }
 
+    .header.responsive a.nav-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header.responsive .header-logo {
+        float: none;
+        display: block;
+    }
+
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
     .header.responsive.sticky {
         position: fixed;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .header button {display: none;}
 }

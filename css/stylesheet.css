@@ -1,13 +1,20 @@
 @import "header.css";
 @import "footer.css";
-@import "index-content.css";
 
 * {
     box-sizing: border-box;
+
+    --primary-text-color: #66FCF1;
+    --secondary-text-color: #45A29E;
+    --tertiär-text-color: #C5C6C7;
+    --primary-background-color: #0B0C10;
+    --secondary-background-color: #1F2833;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: var(--secondary-background-color);
     margin: 0;
     padding: 0;
 }
@@ -23,4 +30,20 @@ body {
 
 .content {
     grid-area: content;
+}
+
+.top-title {
+    font-size: 60px;
+    color: var(--primary-background-color);
+}
+
+.top-subtitle {
+    font-size: 30px;
+    color: var(--tertiär-text-color);
+}
+
+.top-title, .top-subtitle {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }

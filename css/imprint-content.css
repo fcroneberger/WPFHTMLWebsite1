@@ -1,0 +1,27 @@
+.imprint-content-container {
+    display: grid;
+    background-color: var(--secondary-background-color);
+
+    grid-template-areas:
+            'imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel imprintTopPanel '
+            'imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel imprintBottomPanel';
+}
+
+.imprint-top-panel {
+    grid-area: imprintTopPanel;
+
+    background-color: var(--secondary-text-color);
+    margin: 40px 0;
+}
+
+.imprint-bottom-panel {
+    grid-area: imprintBottomPanel;
+
+    height: min(100vh, auto);
+    color: var(--tertiär-text-color);
+    margin: 0 20px;
+}
+
+.imprint-bottom-panel strong, .imprint-bottom-panel h1 {
+    color: var(--primary-text-color);
+}

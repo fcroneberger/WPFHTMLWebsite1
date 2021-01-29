@@ -1,14 +1,14 @@
 .footer {
     grid-area: footer;
-    background-color: #999;
+    background-color: var(--secondary-background-color);
 }
 
 .footer a {
-    color: white;
+    color: var(--tertiär-text-color);
 }
 
 .footerHeart {
-    color: #ff0000;
+    color: var(--primary-text-color);
 }
 
 .left-footerPanel {
@@ -19,7 +19,7 @@
     padding: .5em 0 .5em 0.25em;
 }
 
-.middle-footerPanel {
+.center-footerPanel {
     grid-area: center-footerPanel;
 
     margin: auto 0 auto 0;
@@ -33,6 +33,14 @@
     margin: auto 0 auto 0;
     text-align: right;
     padding: .5em 0.25em .5em 0;
+}
+
+.right-footerPanel a {
+    text-decoration: none;
+}
+
+.footer-icon-copyright {
+    color: var(--primary-text-color);
 }
 
 .container-footer {
