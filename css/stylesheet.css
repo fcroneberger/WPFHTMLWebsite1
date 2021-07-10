@@ -34,7 +34,7 @@ body {
 
 .top-title {
     font-size: 60px;
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 .top-subtitle {

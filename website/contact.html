@@ -36,18 +36,32 @@
             </div>
 
             <div class="contact-bottom-panel">
-                <form>
-                    <label class="contact-label" for="inputSurname">Vorname</label>
-                    <input class="contact-input" id="inputSurname" type="text" placeholder="Vorname" required>
+                <p class="contact-needed-fields-text">Ben&ouml;tigte Felder sind mit einem <span class="contact-asterisk">*</span> gekennzeichnet!</p>
+                <form class="contact-form">
+                    <div class="contact-form-group">
+                        <label class="contact-label" for="inputSurname">Vorname <div class="contact-asterisk">*</div></label>
+                        <input class="contact-input" id="inputSurname" type="text" placeholder="Max" required>
+                    </div>
 
-                    <label class="contact-label" for="inputLastname">Nachname</label>
-                    <input class="contact-input" id="inputLastname" type="text" placeholder="Nachname" required>
+                    <div class="contact-form-group">
+                        <label class="contact-label" for="inputLastname">Nachname <div class="contact-asterisk">*</div></label>
+                        <input class="contact-input" id="inputLastname" type="text" placeholder="Musterman" required>
+                    </div>
 
-                    <label class="contact-label" for="inputEMail">E-Mail</label>
-                    <input class="contact-input" id="inputEMail" type="email" placeholder="E-Mail" required>
+                    <div class="contact-form-group">
+                        <label class="contact-label" for="inputEMail">E-Mail <div class="contact-asterisk">*</div></label>
+                        <input class="contact-input" id="inputEMail" type="email" placeholder="max@musterman.de" required>
+                    </div>
 
-                    <label class="contact-label" for="inputMessage">Nachricht</label>
-                    <textarea class="contact-input contact-textarea" id="inputMessage" placeholder="Nachricht" required></textarea>
+                    <div class="contact-form-group">
+                        <label class="contact-label" for="inputNumber">Telefonnummer</label>
+                        <input class="contact-input" id="inputNumber" type="tel" placeholder="1234 56789">
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label class="contact-textarea-label" for="inputMessage">Nachricht <div class="contact-asterisk">*</div></label>
+                        <textarea class="contact-input contact-textarea" id="inputMessage" placeholder="Ihre Nachricht..." required></textarea>
+                    </div>
 
                     <button class="contact-submit-button" type="submit">Absenden</button>
                 </form>

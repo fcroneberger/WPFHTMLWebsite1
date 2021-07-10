@@ -11,7 +11,6 @@
 .contact-top-panel {
     grid-area: contactTopPanel;
 
-    background-color: var(--secondary-text-color);
     margin: 40px 0;
 }
 
@@ -21,41 +20,79 @@
     color: var(--tertiär-text-color);
 }
 
-.contact-input {
-    display: block;
+.contact-form-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 
-    background-color: var(--secondary-text-color);
-    color: var(--primary-background-color);
-    width: max(75%, 400px);
+    margin: 40px 60px;
+}
+
+.contact-input {
+    display: flex;
+
+    background-color: inherit;
+    color: var(--tertiär-text-color);
+    width: max(calc(50% - 4%), 400px);
     height: 40px;
     margin: 0 auto;
-    border: 1px solid var(--primary-text-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
     font-size: 20px;
+}
+
+.contact-input:focus {
+    border-color: var(--primary-background-color);
+    outline: none;
 }
 
 .contact-textarea {
     resize: vertical;
     height: 200px;
     min-height: 200px;
+    width: max(calc(100% - 4%), 200px);
+}
+
+.contact-textarea-label {
+    display: flex;
+
+    margin: 0 auto;
+    width: max(calc(100% - 4%), 200px);
+    color: var(--tertiär-text-color);
 }
 
 .contact-label {
-    display: block;
+    display: flex;
 
-    width: max(75%, 400px);
-    margin: 20px auto 0;
+    margin: 0 auto;
+    width: max(calc(50% - 4%), 400px);
     color: var(--tertiär-text-color);
 }
 
 .contact-submit-button {
     display: block;
 
-    width: max(10%, 100px);
     margin: 60px auto 150px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    background-color: var(--primary-background-color);
+    color: var(--tertiär-text-color);
+    border: none;
+}
+
+.contact-submit-button:hover {
+    cursor: pointer;
     background-color: var(--primary-text-color);
-    color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+}
+
+.contact-needed-fields-text {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.contact-asterisk {
+    color: var(--primary-text-color);
 }
