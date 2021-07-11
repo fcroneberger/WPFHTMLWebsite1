@@ -1,0 +1,77 @@
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px 4%;
+    padding: 20px;
+    width: calc(33% - 8%);
+    text-align: center;
+    background: var(--primary-background-color);
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--primary-text-color);
+}
+
+.card-content {
+    text-align: center;
+    font-size: 1em;
+    color: var(--tertiär-text-color);
+    padding: 30px 10px 10px;
+}
+
+.card-icon {
+    font-size: 5em;
+    color: var(--primary-text-color);
+    padding: 5px 10px;
+}
+
+.card-arrow {
+    color: var(--primary-text-color);
+    position: relative;
+    right: 0;
+    transition: right ease 0.5s;
+    margin-left: 3px;
+}
+
+.card a:hover > .card-arrow {
+    right: -8px;
+}
+
+.card-icon-gold {
+    color: gold;
+}
+
+.card-icon-silver {
+    color: silver;
+}
+
+.card-icon-bronze {
+    color: sandybrown;
+}
+
+.card-icon-check {
+    color: green;
+}
+
+.card-icon-cross {
+    color: red;
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 400px;
+    }
+}

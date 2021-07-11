@@ -1,0 +1,159 @@
+.newsletter-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+.newsletter-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.newsletter-close-button {
+    color: var(--tertiär-text-color);
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.newsletter-close-button:hover,
+.newsletter-close-button:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.newsletter-modal-header {
+    display: flex;
+    justify-content: right;
+    padding: 8px 16px;
+    background-color: var(--secondary-background-color);
+    align-items: flex-end;
+}
+
+.newsletter-modal-body {
+    padding: 8px 16px 60px;
+    background-color: var(--primary-background-color);
+}
+
+.newsletter-modal-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-modal h1 {
+    text-align: center;
+    font-size: 4em;
+    color: var(--primary-text-color);
+}
+
+.newsletter-modal h4 {
+    margin: 0 2%;
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--tertiär-text-color);
+}
+
+.newsletter-modal-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    border: 3px solid var(--secondary-background-color);
+
+    width: auto;
+    height: 40px;
+    margin: 80px 20px;
+    font-size: 20px;
+}
+
+.newsletter-input {
+    width: calc(100% / 3 * 2);
+
+    font-size: 0.8em;
+
+    border: none;
+    background-color: var(--tertiär-text-color);
+}
+
+.newsletter-input:focus {
+
+    outline: none;
+}
+
+.newsletter-submit {
+    width: calc(100% / 3 * 1);
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-size: 0.8em;
+    outline: none;
+    border: none;
+}
+
+.newsletter-submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: var(--primary-background-color);
+}
+
+.alert {
+    padding: 20px;
+    background-color: var(--primary-background-color);
+    color: darkseagreen;
+}
+
+.alert-close {
+    margin-left: 15px;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--tertiär-text-color);
+}
+
+.alert-close:hover {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@media screen and (max-width: 600px) {
+    .newsletter-modal h1 {
+        font-size: 3em;
+    }
+
+    .newsletter-modal h4 {
+        font-size: 1.3em;
+    }
+}

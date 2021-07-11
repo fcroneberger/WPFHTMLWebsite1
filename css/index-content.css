@@ -11,30 +11,6 @@
     grid-area: contentIndexPanel;
 }
 
-.index-button {
-    border: 3px solid var(--primary-text-color);
-    color: var(--tertiär-text-color);
-
-    padding: 5px 10px;
-    margin: 100px 20% 300px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.index-button:hover {
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
-}
-
-.index-button a {
-    text-decoration: none;
-    font-size: 2em;
-}
-
-.index-button a:visited {
-    color:inherit;
-}
-
 .index-logo {
     margin-top: 80px;
     display: block;
@@ -54,4 +30,63 @@
     color: var(--primary-text-color);
     margin-block-start: .1em;
     margin-block-end: .1em;
+}
+
+.index-subtitle {
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-size: 3em;
+}
+
+.container-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4%;
+
+}
+
+.container-video > .video {
+    width: 50%;
+}
+
+.container-video > .index-text {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.container-about-us {
+    display: flex;
+    margin: 0 4%;
+}
+
+.container-about-us > .index-text {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.container-about-us > .about-us-icon {
+    justify-self: right;
+    align-self: end;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .container-about-us > .about-us-icon {
+        display: none;
+    }
+
+    .container-about-us > .index-text {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .container-about-us > .index-text li {
+        list-style-type: none;
+    }
 }

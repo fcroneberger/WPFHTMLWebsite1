@@ -5,18 +5,33 @@
 
     <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="../css/index-content.css" type="text/css">
-    <link rel="stylesheet" href="../css/newsletter-modal.css" type="text/css">
+    <link rel="stylesheet" href="../css/newsletter.css" type="text/css">
+    <link rel="stylesheet" href="../css/cards.css" type="text/css">
     <link rel="icon" href="images/logo.svg" type="image/svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<div class="alert hide">
+    <span class="alert-close" onclick="toggleAlert()">&times;</span>
+    Danke f&uuml;r das Abbonieren unseres <strong>Newsletters!</strong>
+</div>
+
 <div id="newsletter-modal" class="newsletter-modal">
     <div class="newsletter-modal-content">
-        <div class="newsletter-modal-close">&times;</div>
-        <p>Jetzt immer das neueste wissen!</p>
-        <input type="email">
-        <button type="submit">Anmelden</button>
+        <div class="newsletter-modal-header">
+            <span class="newsletter-close-button">&times;</span>
+        </div>
+        <div class="newsletter-modal-body">
+            <img class="newsletter-modal-logo" src="images/logo.svg" alt="FurYou-IT">
+            <h1>Abboniere unseren Newsletter!</h1>
+            <h4>Abonnieren Sie unseren Newsletter und verpassen Sie keine Angebote und neuen Leistungen mehr!</h4>
+
+            <form class="newsletter-modal-form">
+                <input class="newsletter-input" type="email" placeholder="E-Mail" required>
+                <button class="newsletter-submit" type="button">Abbonieren</button>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -54,9 +69,136 @@
                     der richtigen Stelle!
                 </p>
 
-                <div class="index-button">
-                    <a href="./services.html">Unsere Leistungen</a>
+                <p class="index-subtitle">Unsere Leistungen</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <i class="card-icon fas fa-code"></i>
+                        <div class="card-title card-icon-">Webentwicklung</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./services.html#webdevelopment">Mehr lesen <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-server"></i>
+                        <div class="card-title">Webhosting</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./services.html#webhosting">Mehr lesen <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-band-aid"></i>
+                        <div class="card-title">Webmaintrance</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./services.html#webmaintrance">Mehr lesen <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
                 </div>
+
+                <p class="index-subtitle" id="webdevelopment">Unser Services</p>
+
+                <div class="card-container">
+                    <div class="card">
+                        <i class="card-icon fas fa-phone-alt"></i>
+                        <div class="card-title">24/7 Support</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./contact.html">Kontaktiere uns <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-info-circle"></i>
+                        <div class="card-title">Beratung</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./contact.html">Kontaktiere uns <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-calendar-alt"></i>
+                        <div class="card-title">Projektplanung</div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <br>
+                            <a href="./contact.html">Kontaktiere uns <i class="fas fa-arrow-right card-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="index-subtitle">Lerne uns kennen</p>
+
+                <div class="container-video">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HDF44vjTzwc?controls=0" title="Lerne uns kennen" frameborder="0" allow="autoplay; modestbrainding; accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="index-text">
+                        <p>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur debitis doloremque eaque eligendi, eum expedita fuga hic ipsa magnam maxime non odit placeat porro praesentium provident, repudiandae, sapiente veritatis!</span>
+
+                        </p>
+                        <ul>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="index-subtitle">&Uuml;ber Uns</p>
+
+                <div class="container-about-us">
+                    <div class="index-text">
+                        <p>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur debitis doloremque eaque eligendi, eum expedita fuga hic ipsa magnam maxime non odit placeat porro praesentium provident, repudiandae, sapiente veritatis!</span>
+
+                        </p>
+                        <ul>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                            <li>
+                                Lorem ipsum
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-us-icon">
+                        <img src="images/logo.svg" alt="FurYou-IT">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -82,7 +224,7 @@
 
 <script src="../js/javascript.js"></script>
 <script src="https://kit.fontawesome.com/4107e65e7d.js" crossorigin="anonymous"></script>
-<script src="../js/newsletterModal.js"></script>
+<script src="../js/newsletter.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </body>
