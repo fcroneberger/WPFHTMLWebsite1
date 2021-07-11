@@ -21,7 +21,7 @@
 .index-text {
     text-align: center;
     font-size: 1em;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .index-title {

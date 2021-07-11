@@ -5,10 +5,10 @@
     box-sizing: border-box;
 
     --primary-text-color: #66FCF1;
-    --secondary-text-color: #45A29E;
-    --tertiär-text-color: #C5C6C7;
+    --secondary-text-color: #C5C6C7;
     --primary-background-color: #0B0C10;
     --secondary-background-color: #1F2833;
+
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 
 .top-subtitle {
     font-size: 30px;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .top-title, .top-subtitle {

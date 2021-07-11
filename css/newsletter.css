@@ -26,7 +26,7 @@
 }
 
 .newsletter-close-button {
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     font-size: 28px;
     font-weight: bold;
     margin-left: auto;
@@ -68,7 +68,7 @@
     margin: 0 2%;
     text-align: center;
     font-size: 1.8em;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .newsletter-modal-form {
@@ -90,7 +90,7 @@
     font-size: 0.8em;
 
     border: none;
-    background-color: var(--tertiär-text-color);
+    background-color: var(--secondary-text-color);
 }
 
 .newsletter-input:focus {
@@ -127,7 +127,7 @@
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .alert-close:hover {

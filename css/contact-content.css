@@ -17,7 +17,7 @@
 .contact-bottom-panel {
     grid-area: contactBottomPanel;
 
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .contact-form-group {
@@ -32,7 +32,7 @@
     display: flex;
 
     background-color: inherit;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     width: max(calc(50% - 4%), 400px);
     height: 40px;
     margin: 0 auto;
@@ -58,7 +58,7 @@
 
     margin: 0 auto;
     width: max(calc(100% - 4%), 200px);
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .contact-label {
@@ -66,7 +66,7 @@
 
     margin: 0 auto;
     width: max(calc(50% - 4%), 400px);
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .contact-submit-button {
@@ -78,7 +78,7 @@
     text-decoration: none;
     font-size: 20px;
     background-color: var(--primary-background-color);
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     border: none;
 }
 

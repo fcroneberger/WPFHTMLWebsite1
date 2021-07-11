@@ -2,7 +2,7 @@
     grid-area: preHeader;
 
     background-color: var(--primary-background-color);
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     text-align: right;
     display: block;
     padding: .3em;
@@ -13,7 +13,7 @@
 }
 
 .pre-header-text {
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     margin-right: 10px;
 }
 
@@ -31,7 +31,7 @@
 .header a {
     float: left;
     display: block;
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;

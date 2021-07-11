@@ -19,7 +19,7 @@
     grid-area: imprintBottomPanel;
 
     height: min(100vh, auto);
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
     margin: 0 20px;
 }
 

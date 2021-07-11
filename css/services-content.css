@@ -35,7 +35,7 @@
 }
 
 .left-services-panel, .center-services-panel, .right-services-panel {
-    color: var(--tertiär-text-color);
+    color: var(--secondary-text-color);
 }
 
 .service-title {
