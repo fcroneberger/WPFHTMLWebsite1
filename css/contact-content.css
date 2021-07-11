@@ -96,3 +96,9 @@
 .contact-asterisk {
     color: var(--primary-text-color);
 }
+
+@media screen and (max-width: 920px) {
+    .contact-label {
+
+    }
+}

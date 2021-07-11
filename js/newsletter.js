@@ -3,7 +3,6 @@ setTimeout(showNewsletterModal, 5000);
 const modal = document.getElementById("newsletter-modal");
 const closeButton = document.getElementsByClassName("newsletter-close-button")[0];
 const submitButton = document.getElementsByClassName("newsletter-submit")[0];
-const alert = document.getElementsByClassName("alert")[0];
 
 closeButton.onclick = function() {
     hideNewsletterModal();
